@@ -96,7 +96,37 @@
   overflow: hidden;
   transition: 0.5s;
 }
-
+#numbers{
+	display: grid;
+	grid-gap: 20px 20px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+	width:80%;
+}
+#number-row{
+	background-color: lightgreen;
+	border-radius: 20px 20px 20px 20px;
+}
+#number-row:hover{
+	background-color: rgb(57, 202, 57);
+	cursor: pointer;
+	color:white;
+}
+#support{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+	grid-gap: 20px 20px ;
+	width:80%;
+}
+#support-row{
+	background-color: lightgreen;
+}
+#support-row:hover{
+	background-color: rgb(57, 202, 57);
+	cursor: pointer;
+	color:white;
+}
 </style>
 
 </head>
@@ -118,15 +148,46 @@
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("body-content").style.marginLeft = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("body-content").style.marginLeft = "0";
 }
 </script>
-<center><h1>Mind Friend</h1></center>
-
- <br><br>
-</body>
+<div id="body-content">
+<center><h1>Mind Friend</h1>
+<quote> <i>"Do you know that according to WHO, it is estimated that at least 10 percent of the world’s population is affected, and that 20 percent of children and adolescents suffer from some type of mental disorder." </i></quote>
+<br><br><h3>Well, that's a terrific number, right?</h3>
+<p>Mental disorders, such as depression, anxiety, and substance use disorders, affect millions of people worldwide. They impose an 
+enormous global disease burden that leads to premature mortality and affects functioning and quality of life.</p>
+<div id="numbers">
+	<div id="number-row"><h1>970 m</h1><p>People suffer from mental health related and substance abuse problems in 2018.</p></div>
+	<div id="number-row"><h1>284 m</h1><p>People suffered from anxiety in 2018.</p></div>
+	<div id="number-row"><h1>10.1 years</h1><p>Is the median loss in the mortality rate of those with mental disorders.</p></div>
+	<div id="number-row"><h1>14.3%</h1><p>Of deaths worldwide are caused due to mental health issues.</p></div>
+	<div id="number-row"><h1>264 m</h1><p>People suffer from depression worldwide.</p></div>
+	<div id="number-row"><h1>Female</h1><p>Are the most suffered gender due to mental illnesses.</p></div>
+</div>
+<p><br>The following video created
+	by the world bank shows the height of problem.</p>
+	<iframe width="654" height="367" src="https://www.youtube.com/embed/THT43iz9E8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><h3>What can we do? </h3>
+<p>Well, there's a lot we can do, probably the easiest thing we can do is to support others coping up with depression, by just talking
+	with someone coping with depression we can help them out.
+</p>
+<p>Need some support to get started, well, we've got you.</p>
+<p>We have a special mind friend zone where you can relax, get help and support.</p>
+<p>Other than that, here are what we suggest are helpful to cope up with our mental illness.</p>
+<div id="support">
+	<div id="support-row"><img src="meditation.png" width="100%" height="200px"><p>Meditate</p></div>
+	<div id="support-row"><img src="talk.jpg" width="100%" height="200px"><p>Talk with someone</p></div>
+	<div id="support-row"><img src="therapist.jpg" width="100%" height="200px"><p>Talk with a therapist</p></div>
+	<div id="support-row"><img src="selfcare.jpg" width="100%" height="200px"><p>Self care</p></div>
+	<div id="support-row"><img src="running.jpg" width="100%" height="200px"><p>Running and workout</p></div>
+	<div id="support-row"><h1>....</h1><p>Check out more resources at our mind free zone page.</p></div>
+</div>
+</center></div></body>
 </html>
