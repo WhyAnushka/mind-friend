@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mind-Friend</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<style >
+	body{
+		 margin: 10px;
+		background-color: #EBDEF0 ;
+		color: black;
+	}
+	
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 5px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+}
+
+	h1{
+		
+		 font-size: 50px;
+ word-break: keep-all;;
+	}
+	h3{
+		
+		 font-size: 30px;
+  word-break: keep-all;;
+	}
+
+	a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 50px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+</style>
+
+</head>
+<body>
+<div id="main">
+  <button class="openbtn" onclick="openNav()"> ☰ Contact</button>  
+</div>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html"><i class="fas fa-qrcode"></i> Home</a>
+ <a href="Mind.html"><i class="far fa-grin-beam"></i> Mind Free Zone</a>
+  <a href="About.html"><i class="fas fa-question-circle"></i> About</a>
+  <a href="Contact.html"><i class="far fa-address-card"></i> Contact</a>
+
+ 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<center><h1>Contact</h1></center>
+
+ <br><br>
+</body>
+</html>
