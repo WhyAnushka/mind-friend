@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mind-Friend</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style >
-	body{
-		color: black;
+  <title>Mind-Friend</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style >
+  body{
+    color: black;
     background-color: #F7DC6F ;
-        height: 100%;
-          padding: 20px;
-        font-family: Arial;
-        background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-	}
-	p {
+    height: 100%;
+    padding: 20px;
+    font-family: Arial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+  }
+  p {
     color: #6C3483;
   font-size: 20px;
   word-break: none;
@@ -30,9 +31,10 @@
   color: black;
 }
 ul {
-  font-size: 30px;
+  font-size: 20px;
   word-break: none;
-  color: #FFE57D;
+  color: #6C3483;
+  text-align: left;
 }
 .sidebar {
   height: 100%;
@@ -93,18 +95,18 @@ ul {
 
 }
 
-	h1{
-		
-		 font-size: 50px;
+  h1{
+    
+     font-size: 50px;
  word-break: keep-all;;
-	}
-	h3{
-		
-		 font-size: 30px;
+  }
+  h3{
+    
+     font-size: 30px;
   word-break: keep-all;;
-	}
+  }
 
-	a{
+  a{
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -117,37 +119,37 @@ ul {
   transition: 0.5s;
 }
 #numbers{
-	display: grid;
-	grid-gap: 20px 20px ;
+  display: grid;
+  grid-gap: 20px 20px ;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-	width:80%;
+  width:80%;
 }
 #number-row{
-	background-color: #D2B4DE;
-	border-radius: 20px 20px 20px 20px;
+  background-color: #D2B4DE;
+  border-radius: 20px 20px 20px 20px;
 }
 #number-row:hover{
-	background-color: rgb(57, 202, 57);
-	cursor: pointer;
-	color:white;
+  background-color: rgb(57, 202, 57);
+  cursor: pointer;
+  color:white;
 }
 #support{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-	grid-gap: 20px 20px ;
-	width:80%;
+  grid-gap: 20px 20px ;
+  width:80%;
 }
 #support-row{
-	background-color:#D2B4DE;
+  background-color:#D2B4DE;
 }
 #support-row:hover{
-	background-color:#A569BD;
-	cursor: pointer;
-	color:white;
+  background-color:#A569BD;
+  cursor: pointer;
+  color:white;
 }
-		@media screen and (max-width: 900px) {
+    @media screen and (max-width: 900px) {
  #support-row{
     width: 50%;
   }
@@ -163,7 +165,7 @@ ul {
   .sidebar a {font-size: 18px;}
 
 }
-		
+    
 </style>
 
 </head>
@@ -195,36 +197,53 @@ function closeNav() {
 }
 </script>
 <div id="body-content"><br>
-	<br>
+  <br>
 <center><h1>Mind Friend</h1>
 <p> <b> "Do you know that according to WHO, it is estimated that at least 10 percent of the world’s population is affected, and that 20 percent of children and adolescents suffer from some type of mental disorder." </p> </b>
-<br><br><h3>Well, that's a terrific number, right?</h3>
-<p>Mental disorders, such as depression, anxiety, and substance use disorders, affect millions of people worldwide. They impose an 
+<br><br><h3 style="text-align: left;"style="text-align: left;">Well, that's a terrific number, right?</h3>
+<p style="text-align: left;">Mental disorders, such as depression, anxiety, and substance use disorders, affect millions of people worldwide. They impose an 
 enormous global disease burden that leads to premature mortality and affects functioning and quality of life.</p>
 <div id="numbers">
-	<div id="number-row"><h1>970 m</h1><p>People suffer from mental health related and substance abuse problems in 2018.</p></div>
-	<div id="number-row"><h1>284 m</h1><p>People suffered from anxiety in 2018.</p></div>
-	<div id="number-row"><h1>10.1 years</h1><p>Is the median loss in the mortality rate of those with mental disorders.</p></div>
-	<div id="number-row"><h1>14.3%</h1><p>Of deaths worldwide are caused due to mental health issues.</p></div>
-	<div id="number-row"><h1>264 m</h1><p>People suffer from depression worldwide.</p></div>
-	<div id="number-row"><h1>Female</h1><p>Are the most suffered gender due to mental illnesses.</p></div>
+  <div id="number-row"><h1>970 m</h1><p>People suffer from mental health related and substance abuse problems in 2018.</p></div>
+  <div id="number-row"><h1>284 m</h1><p>People suffered from anxiety in 2018.</p></div>
+  <div id="number-row"><h1>10.1 years</h1><p>Is the median loss in the mortality rate of those with mental disorders.</p></div>
+  <div id="number-row"><h1>14.3%</h1><p>Of deaths worldwide are caused due to mental health issues.</p></div>
+  <div id="number-row"><h1>264 m</h1><p>People suffer from depression worldwide.</p></div>
+  <div id="number-row"><h1>Female</h1><p>Are the most suffered gender due to mental illnesses.</p></div>
 </div>
 <p><br>The following video created
-	by the world bank shows the height of problem.</p>
-	<iframe width="654" height="367" src="https://www.youtube.com/embed/THT43iz9E8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><h3>What can we do? </h3>
-<p>Well, there's a lot we can do, probably the easiest thing we can do is to support others coping up with depression, by just talking
-	with someone coping with depression we can help them out.
+  by the world bank shows the height of problem.</p>
+  <iframe width="654" height="367" src="https://www.youtube.com/embed/THT43iz9E8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br><h3 style="text-align: left;">What can we do? </h3>
+<p style="text-align: left;">If your loved one shows signs of mental illness, have an open and honest discussion with him or her about your concerns. You may not be able to force someone to get professional care, but you can offer encouragement and support. You can also help your loved one find a qualified mental health professional and make an appointment. You may even be able to go along to the appointment.
+
+If your loved one has done self-harm or is considering doing so, take the person to the hospital or call for emergency help.
 </p>
-<p> <b> Need some support to get started, well, we've got you.
-We have a special mind friend zone where you can relax, get help and support.
-	Other than that, here are what we suggest are helpful to cope up with our mental illness.</p></b>
+ <b> <h3 style="text-align: left;">Mental Health Issues People Usually Face But Don't Talk About</h3> </b>
+<p style="text-align: left;"> Mental illness, also called mental health disorders, refers to a wide range of mental health conditions — disorders that affect your mood, thinking and behavior. Examples of mental illness include depression, anxiety disorders, schizophrenia, eating disorders and addictive behaviors.</p>
+<h3 style="text-align: left;"> Signs and Symptoms </h3>
+<UL>
+<li> Feeling sad or down</li>
+<li>Confused thinking or reduced ability to concentrate</li>
+<li>Excessive fears or worries, or extreme feelings of guilt</li>
+<li>Extreme mood changes of highs and lows</li>
+<li>Withdrawal from friends and activities</li>
+<li>Significant tiredness, low energy or problems sleeping</li>
+<li>Detachment from reality (delusions), paranoia or hallucinations</li>
+<li>Inability to cope with daily problems or stress</li>
+<li>Trouble understanding and relating to situations and to people</li>
+<li>Problems with alcohol or drug use</li>
+<li>Major changes in eating habits</li>
+<li>Sex drive changes</li>
+<li>Excessive anger, hostility or violence</li>
+<li>Suicidal thinking</li></UL>
 <div id="support">
-	<div id="support-row"><img src="meditation.png" width="100%" height="200px"><p>Meditate</p></div>
-	<div id="support-row"><img src="talk.jpg" width="100%" height="200px"><p>Talk with someone</p></div>
-	<div id="support-row"><img src="therapist.jpg" width="100%" height="200px"><p>Talk with a therapist</p></div>
-	<div id="support-row"><img src="selfcare.jpg" width="100%" height="200px"><p>Self care</p></div>
-	<div id="support-row"><img src="running.jpg" width="100%" height="200px"><p>Running and workout</p></div>
+  <div id="support-row"><img src="meditation.png" width="100%" height="200px"><p>Meditate</p></div>
+  <div id="support-row"><img src="talk.jpg" width="100%" height="200px"><p>Talk with someone</p></div>
+  <div id="support-row"><img src="therapist.jpg" width="100%" height="200px"><p>Talk with a therapist</p></div>
+  <div id="support-row"><img src="selfcare.jpg" width="100%" height="200px"><p>Self care</p></div>
+  <div id="support-row"><img src="running.jpg" width="100%" height="200px"><p>Running and workout</p></div>
    <div id="support-row"><br><p style="font-size: 22px;"><b>It's never too late to ask for help. You can contact local helpline number for any kind of help regarding mental health.<br></p></b></div>
 
 </center></div></body>
