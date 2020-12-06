@@ -124,7 +124,7 @@ ul {
 	width:80%;
 }
 #number-row{
-	background-color: lightgreen;
+	background-color: #D2B4DE;
 	border-radius: 20px 20px 20px 20px;
 }
 #number-row:hover{
@@ -135,7 +135,7 @@ ul {
 #support{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 	grid-gap: 20px 20px ;
 	width:80%;
 }
@@ -143,16 +143,25 @@ ul {
 	background-color:#D2B4DE;
 }
 #support-row:hover{
-	background-color: rgb(57, 202, 57);
+	background-color:#A569BD;
 	cursor: pointer;
 	color:white;
 }
+		@media screen and (max-width: 900px) {
+ #support-row{
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #support-row {
+    width: 100%;
+  }
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
-	body {
-        position: fixed;
-    }
+
 }
 		
 </style>
